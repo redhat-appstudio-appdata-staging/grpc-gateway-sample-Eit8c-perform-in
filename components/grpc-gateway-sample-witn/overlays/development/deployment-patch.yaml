@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: grpc-gateway-sample-witn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/oandriie-tenant/grpc-gateway-sample/grpc-gateway-sample-witn@sha256:0f3610a0e7e4969a12d36e5b973116935e29bfef1738d2b2cee576df61c380a4
+        name: my-nodejs
+        resources: {}
+status: {}
